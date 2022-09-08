@@ -23,10 +23,72 @@
     --Dark-blue: hsl(235, 46%, 20%);
     --Desaturated-blue: hsl(235, 45%, 61%);
     --Pale-Blue: hsl(236, 100%, 87%);
+    --White: white; 
 }
 
 body{
     background-color: var(--Very-dark-blue);
     /* para llamar a las variables de colores, es con var() */
     font-family: 'Rubik', sans-serif;
+    color: var(--Pale-Blue)
+}
+
+.main-container{
+    /* border: 5px solid white; */
+    /* en las ayudas visuales no llamamos los colores con var para no confundirnos */
+    width: 328px;
+    margin: 100px auto;
+    /* al determinar el width, con el margin auto se centra automaticamente */
+    position: relative;
+    /* cada elemento que tenga un position absolute, se ajustara al contenedor mayor */
+}
+
+/* .first-section{
+     border: 3px solid yellow; 
+} */
+
+.main-card__user{
+    background-color: var(--Blue);
+    display: flex;
+    /* colocamos el texto al costado de la img, de acuerdo a los div */
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.main-card__image{
+    width: 72px;
+    margin-right: 1rem;
+    border: 4px solid var(--White);
+    border-radius: 60%;
+}
+
+.main-card__title{
+    font-size: 0.9em;
+    margin: 10px 0px 4px;
+}
+
+.main-card__name{
+    font-size: 23px;
+    font-weight: 300px;
+    color: var(--White);
+}
+
+.main-card__dates{
+    background-color: var(--Dark-blue);
+    border-radius: 1rem;
+    display: flex;  
+    justify-content: space-around;
+    height: 75px;
+    padding-top: 38px;
+    /* con padding colocamos un espacio interior, con margin es exterior con los demas elementos */
+    font-size: 1rem;
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    z-index: -1;
+    /* con valor negativo en el z-index colocamos el elemento por detras */
+}
+
+.second-section{
+    margin-top: 90px;
 }
