@@ -1,6 +1,6 @@
 # Time tracking dashboard
 
- (./design/desktop-preview.jpg)
+![Design preview for the Time tracking dashboard](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
 
