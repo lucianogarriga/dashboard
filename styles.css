@@ -137,3 +137,27 @@ body{
     color: var(--White);
     background-color: var(--Desaturated-blue);
 }
+.card__activity, .card__time{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card__title{
+    color: var(--White);
+    display: flex;
+    font-size: 1.2em;
+    font-weight: 450;
+}
+.card__hour{
+    font-size: 2em;
+    color: var(--White);
+    font-weight: 300;
+}
+.attribution { 
+    font-size: 18px; 
+    text-align: center; 
+    margin-bottom: 60px;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
