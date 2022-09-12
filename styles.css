@@ -167,6 +167,7 @@ body{
     .main-container{
         width: 1150px;
         display: flex;  
+        margin: 160px auto;
     }
     .first-section{
         /* border: 2px solid yellow; */
