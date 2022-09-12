@@ -39,13 +39,13 @@ body{
     width: 328px;
     margin: 100px auto;
     /* al determinar el width, con el margin auto se centra automaticamente */
-    position: relative;
+   
     /* cada elemento que tenga un position absolute, se ajustara al contenedor mayor */
 }
 
-/* .first-section{
-     border: 3px solid yellow; 
-} */
+.first-section{ 
+     position: relative;
+}
 
 .main-card__user{
     background-color: var(--Blue);
@@ -101,6 +101,7 @@ body{
 
 .second-section{
     padding-top: 200px;
+    /* border: 1px solid white; */
 }
 
 .card{
@@ -160,4 +161,64 @@ body{
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media(min-width:1200px){
+    .main-container{
+        width: 1150px;
+        display: flex;  
+    }
+    .first-section{
+        /* border: 2px solid yellow; */
+        width: 290px;
+        height: 564px;
+        padding-top: 25px;
+    }
+    .second-section{
+        height: 546px;
+        width: 860px;
+        padding-top: 0;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding: 24px;
+    }
+    .main-card__user{
+        height: 345px;
+        flex-direction: column;
+    }
+    .main-card__image{ 
+        width: 85px;
+        margin-bottom: 35px;
+    }
+    .main-card__title{
+        font-size: 1rem;
+    }
+    .main-card__name{
+        font-size: 2.5rem;
+    }
+    .main-card__dates{
+        margin-top: 240px;
+        height: 200px;
+        flex-direction: column;
+        padding: 40px 32px 18px;
+    }
+    .card{
+        width: 240px;
+        height: 244px;
+        margin-bottom: 25px; 
+        
+    }
+    .card__image{
+        padding-left: 150px;
+    }
+    .card__details{
+        height: 200px;
+        bottom: -5px; 
+    } 
+    .card__time{ 
+        height: 300px;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 0px;
+    }
 }
